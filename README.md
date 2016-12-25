@@ -4,15 +4,15 @@ Some demonstrate for using gradle.
 
 ## I. Publish Multiple Modules
 
-> In this demonstrate we just want to publish two module to the Nexus.
-
-The final architecutre in maven Nexus would be as follows:
-
-<img src="https://github.com/Jacksgong/gralde-sample/raw/master/art/gradle-multiple-modules.png" width="480">
+> In this demonstrate we just want to publish two module(A contains B) to the Nexus.
 
 ### 1. Flat AAR
 
 > This way is through the [adwiv/android-flat-aar](https://github.com/adwiv/android-fat-aar).
+
+The final architecutre in maven Nexus would be as follows:
+
+<img src="https://github.com/Jacksgong/gralde-sample/raw/master/art/flat-aar-sample.png" width="320">
 
 The demonstrate is in the [sample-flat-aar](todo-path), as you can see, in this way our local project can split two modules: 'api' and 'impl' and 'impl' module dependent 'api' module, when we publish 'impl' to the Nexus, the flat-aar script will assemble all stuff in the 'api' into the 'impl' aar directly.
 
