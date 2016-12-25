@@ -25,6 +25,12 @@ The demonstrate is in the [sample-flat-aar][sample-flat-aar-folder-folder], as y
 
 In this sample we decalre all common variable params in the project [gradle.properties](https://github.com/Jacksgong/gralde-sample/blob/master/sample-flat-aar/gradle.properties). and declare the each module special `artifact id` in the `build.gradle` of each module.
 
+#### Script File
+
+- [publish-flat-aar.gradle][publish-flat-aar-gradle]: The gradle script for publish `impl` module.
+- [publish-api.gradle][publish-api-gradle]: The gradle script for publish `api` module.
+- [gralde.properties][flat-aar-gralde-properties]: All common variable params.
+
 ### 2. Official Way
 
 > This way is through the [35.2.5. Publishing multiple modules](https://docs.gradle.org/current/userguide/publishing_maven.html#sec:publishing_multiple_modules_to_maven).
@@ -38,6 +44,11 @@ Just execute `gradle clean build publishToMavenLocal`. Check out result stuff on
 - `~/.m2/repository/cn/dreamtobe/splitaar/sample/splitaar-sample-api`
 - `~/.m2/repository/cn/dreamtobe/splitaar/sample/splitaar-sample-impl`
 
+#### Script File
+
+- [publish.gralde][publish-gralde]: The gradle script for publish `library` module to `impl` and `api`.
+- [gradle.properties][split-aar-gradle-properties]: All common variable params.
+
 ---
 
 ## LICENSE
@@ -48,3 +59,8 @@ Just execute `gradle clean build publishToMavenLocal`. Check out result stuff on
 
 [sample-flat-aar-folder-folder]: https://github.com/Jacksgong/gralde-sample/tree/master/sample-flat-aar
 [sample-split-aar-folder-folder]: https://github.com/Jacksgong/gralde-sample/tree/master/sample-split-aar
+[publish-flat-aar-gradle]: https://github.com/Jacksgong/gralde-sample/blob/master/sample-flat-aar/publish-flat-aar.gradle
+[publish-api-gradle]: https://github.com/Jacksgong/gralde-sample/blob/master/sample-flat-aar/publish-api.gradle
+[flat-aar-gralde-properties]: https://github.com/Jacksgong/gralde-sample/blob/master/sample-flat-aar/gradle.properties
+[publish-gralde]: https://github.com/Jacksgong/gralde-sample/blob/master/sample-split-aar/publish.gradle
+[split-aar-gradle-properties]: https://github.com/Jacksgong/gralde-sample/blob/master/sample-split-aar/gradle.properties
