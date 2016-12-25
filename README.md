@@ -16,6 +16,15 @@ The final architecutre in maven Nexus would be as follows:
 
 The demonstrate is in the [sample-flat-aar](todo-path), as you can see, in this way our local project can split two modules: 'api' and 'impl' and 'impl' module dependent 'api' module, when we publish 'impl' to the Nexus, the flat-aar script will assemble all stuff in the 'api' into the 'impl' aar directly.
 
+#### Sample Checkout
+
+- **Build 'api'**: On the 'api/' folder and execute `gradle clean build publishToMavenLocal`, then checkout the result stuff on the `.m2/repository/cn/dreamtobe/flataar/sample/flataar-sample-api`.
+- **Build 'impl'**: On the 'impl/' folder and execute `gradle publishToMavenLocal`, then checkout the result stuff on the `.m2/repository/cn/dreamtobe/flataar/sample/flataar-sample-impl`.
+
+#### Attention
+
+In this sample we decalre all common variable params in the project [gradle.properties](https://github.com/Jacksgong/gralde-sample/blob/master/sample-flat-aar/gradle.properties). and declare the each module special `artifact id` in the `build.gradle` of each module.
+
 ### 2. Official Way
 
 > This way is through the [35.2.5. Publishing multiple modules](https://docs.gradle.org/current/userguide/publishing_maven.html#sec:publishing_multiple_modules_to_maven).
