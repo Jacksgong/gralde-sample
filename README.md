@@ -31,6 +31,14 @@ In this sample we decalre all common variable params in the project [gradle.prop
 
 The demonstrate is in the [sample-official-way][sample-split-aar-folder-folder], in this way, our local project just has one module: 'library', but when we publish it to the Nexus, we can split it to two part: 'api' and 'impl'.
 
+#### Sample Checkout
+
+Just execute `gradle clean build publishToMavenLocal`. Check out result stuff on the following folders:
+
+- `~/.m2/repository/cn/dreamtobe/splitaar/sample/splitaar-sample-api`
+- `~/.m2/repository/cn/dreamtobe/splitaar/sample/splitaar-sample-impl`
+
+---
 
 ## LICENSE
 
