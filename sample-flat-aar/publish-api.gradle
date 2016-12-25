@@ -5,7 +5,7 @@ apply plugin: 'maven-publish'
 
 // Sample way to checkout:
 // On the api/ folder and execute `gradle clean build publishToMavenLocal`. Check out result stuff
-// On the `.m2/repository/cn/dreamtobe/flataar/sample/flataar-sample-api`
+// On the `~/.m2/repository/cn/dreamtobe/flataar/sample/flataar-sample-api`
 
 task sourceJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs

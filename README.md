@@ -18,8 +18,8 @@ The demonstrate is in the [sample-flat-aar](todo-path), as you can see, in this 
 
 #### Sample Checkout
 
-- **Build 'api'**: On the 'api/' folder and execute `gradle clean build publishToMavenLocal`, then checkout the result stuff on the `.m2/repository/cn/dreamtobe/flataar/sample/flataar-sample-api`.
-- **Build 'impl'**: On the 'impl/' folder and execute `gradle publishToMavenLocal`, then checkout the result stuff on the `.m2/repository/cn/dreamtobe/flataar/sample/flataar-sample-impl`.
+- **Build 'api'**: On the 'api/' folder and execute `gradle clean build publishToMavenLocal`, then checkout the result stuff on the `~/.m2/repository/cn/dreamtobe/flataar/sample/flataar-sample-api`.
+- **Build 'impl'**: On the 'impl/' folder and execute `gradle publishToMavenLocal`, then checkout the result stuff on the `~/.m2/repository/cn/dreamtobe/flataar/sample/flataar-sample-impl`.
 
 #### Attention
 

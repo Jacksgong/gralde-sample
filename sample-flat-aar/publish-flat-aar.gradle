@@ -4,7 +4,7 @@ apply from: 'https://raw.githubusercontent.com/Jacksgong/android-fat-aar/master/
 
 // Sample way to checkout:
 // On the impl/ folder and execute `gradle publishToMavenLocal`. Check out result stuff
-// On the `.m2/repository/cn/dreamtobe/flataar/sample/flataar-sample-impl`
+// On the `~/.m2/repository/cn/dreamtobe/flataar/sample/flataar-sample-impl`
 
 publishing {
     publications {
